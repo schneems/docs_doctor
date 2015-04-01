@@ -53,8 +53,8 @@ Restart your server to pick up these changes.
 
 ## Import from Local rails/rails
 
-
 ```ruby
+# Run following commands in rails console
 reload!
 repo    = Repo.where(full_name: "schneems/threaded").first_or_create
 fetcher = GithubFetcher.new(repo.full_name)
@@ -65,6 +65,7 @@ puts DocFile.last.path
 ```
 
 ```ruby
+# Run following commands in rails console
 repo    = Repo.where(full_name: "rails/rails").first_or_create
 files   = '/Users/schneems/documents/projects/rails/**/*.rb'
 files   = '/Users/schneems/Documents/projects/rails/activerecord/lib/rails/generators/active_record/model/model_generator.rb'
@@ -96,6 +97,7 @@ doc  = repo.methods_missing_docs.first
 
 
 ```ruby
+# Run following commands in rails console
 reload!
 fetcher = GithubFetcher.new(full_name)
 parser  = DocsDoctor::Parsers::Ruby::Rdoc.new(fetcher.clone)
@@ -110,6 +112,7 @@ parser.store(Repo.where("full_name" => full_name).first)
 - Debug emails not being sent
 
 ```ruby
+# Run following commands in rails console
 reload!
 repo    = Repo.where(full_name: "schneems/rrrretry").first_or_create
 fetcher = GithubFetcher.new(repo.full_name)

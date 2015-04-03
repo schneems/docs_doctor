@@ -57,6 +57,8 @@ end
 
 group :test do
   gem 'mocha', require: false
+  gem 'capybara', '2.3.0'
+  gem 'launchy'
 end
 
 gem 'devise',                  "~> 3.2.2"

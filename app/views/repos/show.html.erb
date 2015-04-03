@@ -80,6 +80,15 @@
 <hr />
 <%= will_paginate @docs, :container => false %>
 
+<ul class='nav nav-tabs'>
+  <li class=<%= 'active' if params[:doc_status] == 'with_docs' %>>
+    <%= link_to 'Documented Methods', repo_path(@repo, doc_status: 'with_docs') %>
+  </li>
+  <li class=<%= 'active' if params[:doc_status] == 'missing_docs' %>>
+    <%= link_to 'Undocumented Methods', repo_path(@repo, doc_status: 'missing_docs') %>
+  </li>
+</ul>
+
 <ul>
   <% @docs.each do |doc| %>
     <li>

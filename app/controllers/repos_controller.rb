@@ -27,10 +27,16 @@ class ReposController < RepoBasedController
   end
 
   def show
-    @repo          = Repo.where(full_name: params[:full_name]).first
+    @repo = Repo.where(full_name: params[:full_name]).first
 
     if @repo
-      @docs        = @repo.doc_methods.order("created_at DESC").page(params[:page]).per_page(params[:per_page]||20)
+      @docs = @repo
+                .doc_methods
+                .send(params[:doc_status] || :scoper)
+                .order("created_at DESC")
+                .page(params[:page])
+                .per_page(params[:per_page]||20)
+
       @repo_sub    = current_user.repo_subscriptions.where(repo_id: @repo.id).first if current_user
       @subscribers = @repo.
                       subscribers.

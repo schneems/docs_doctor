@@ -1,0 +1,21 @@
+migrate:
+  id: 1
+  repo_id: 3
+  name: undocumented_method
+  line: 43
+  created_at: 2012-11-10 21:50:48.351554000 Z
+  updated_at: 2012-11-10 21:50:48.351554000 Z
+  doc_comments_count: 0
+  path: 'lib/sinatra'
+  file: 'base.rb'
+
+other:
+  id: 2
+  repo_id: 3
+  name: documented_method
+  line: 43
+  created_at: 2012-11-10 21:50:48.351554000 Z
+  updated_at: 2012-11-10 21:50:48.351554000 Z
+  doc_comments_count: 100
+  path: 'lib/sinatra'
+  file: 'base.rb'

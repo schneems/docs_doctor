@@ -21,5 +21,7 @@ end
 
 require 'parsers/yard_test'
 require 'mocha/setup'
+require 'capybara/rails'
 
 Q.queue_config.inline = true
+

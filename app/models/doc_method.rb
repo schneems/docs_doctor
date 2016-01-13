@@ -18,6 +18,10 @@ class DocMethod < ActiveRecord::Base
     where("doc_comments_count > 0")
   end
 
+  def self.scoper
+    where(nil)
+  end
+
   def raw_file
     read_attribute(:file)
   end

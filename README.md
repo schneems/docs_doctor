@@ -5,6 +5,7 @@
 [![Help Contribute to Open Source](https://www.codetriage.com/codetriage/docs_doctor/badges/users.svg)](https://www.codetriage.com/codetriage/docs_doctor)
 [![Help Contribute to Open Source](https://www.codetriage.com/codetriage/docs_doctor/badges/users.svg)](https://www.codetriage.com/codetriage/docs_doctor)
 [![Help Contribute to Open Source](https://www.codetriage.com/codetriage/docs_doctor/badges/users.svg)](https://www.codetriage.com/codetriage/docs_doctor)
+[![Help Contribute to Open Source](https://www.codetriage.com/codetriage/docs_doctor/badges/users.svg)](https://www.codetriage.com/codetriage/docs_doctor)
 
 ## Manifesto
 

@@ -1,6 +1,7 @@
 # Docs Doctor
 
 [![Build Status](https://travis-ci.org/codetriage/docs_doctor.svg?branch=master)](https://travis-ci.org/codetriage/docs_doctor)
+[![Code Helpers Badge](https://www.codetriage.com/codetriage/docs_doctor/badges/users.svg)](https://www.codetriage.com/codetriage/docs_doctor)
 
 ## Manifesto
 
